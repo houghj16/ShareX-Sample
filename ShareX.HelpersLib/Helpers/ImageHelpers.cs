@@ -38,6 +38,18 @@ using System.Windows.Media.Imaging;
 
 namespace ShareX.HelpersLib
 {
+    // The selected code represents a class called ImageHelpers that contains a variety of static methods for manipulating and working with images. Let's go through some of the key points in the code:
+    //1.	The class is defined with the name ImageHelpers and is marked as public. This means that other classes in the same or different namespaces can access these methods.
+    //2.	The class imports several namespaces using the using keyword. These namespaces provide access to various image-related classes and functionalities.
+    //3.	The class contains a constant field DefaultInterpolationMode, which represents the default interpolation mode used for image resizing.The specific value of this constant is not provided in the code snippet.
+    //4.	The class includes a series of static methods that perform different image manipulation tasks.These methods have various parameters and return types, depending on the specific operation they perform.
+    //•	Some of the methods are used for resizing images.They accept a Bitmap object as input and resize it to the specified dimensions or scale. The InterpolationMode parameter allows you to specify the interpolation mode used during resizing.
+    //•	Other methods are used for adding effects to images, such as shadows, glows, outlines, reflections, and more. These methods take a Bitmap object as input and apply the desired effect.
+    //•	There are also methods for cropping, rotating, pixelating, blurring, and adjusting the color depth of images.
+    //•	Additionally, the class provides methods for combining multiple images, loading and saving images, finding auto-crop rectangles, replacing colors, and more.
+    //5.	Some methods have optional parameters that allow you to customize the behavior of the image manipulation operation.For example, you can specify whether to allow enlarging the image during resizing, set a background color, control the size and strength of effects, and more.
+    //6.	The class also includes some helper methods for working with image files, such as opening file dialogs, retrieving image formats, and saving images in different formats(PNG, JPEG, GIF).
+    //Overall, the ImageHelpers class provides a comprehensive set of methods for performing various image manipulation tasks, making it easier to work with images in a.NET application.
     public static class ImageHelpers
     {
         private const InterpolationMode DefaultInterpolationMode = InterpolationMode.HighQualityBicubic;
