@@ -32,6 +32,7 @@ namespace ShareX.ScreenCaptureLib
 {
     public partial class Screenshot
     {
+        // new change
         public bool CaptureCursor { get; set; } = false;
         public bool CaptureClientArea { get; set; } = false;
         public bool RemoveOutsideScreenArea { get; set; } = true;
