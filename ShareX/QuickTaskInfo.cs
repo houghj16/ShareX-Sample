@@ -60,7 +60,7 @@ namespace ShareX
                 return null;
             }
         }
-
+        // demo Visualizers
         public static List<QuickTaskInfo> DefaultPresets => new List<QuickTaskInfo>()
         {
             new QuickTaskInfo("Save, Upload, Copy URL", AfterCaptureTasks.SaveImageToFile | AfterCaptureTasks.UploadImageToHost, AfterUploadTasks.CopyURLToClipboard),
