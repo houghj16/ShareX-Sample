@@ -36,6 +36,22 @@ namespace ShareX
         public AfterCaptureTasks AfterCaptureTasks { get; set; }
         public AfterUploadTasks AfterUploadTasks { get; set; }
 
+        public bool IsEmpty
+        {
+            get
+            {
+                return AfterCaptureTasks == AfterCaptureTasks.None;
+            }
+        }
+
+        public bool IsUploadTask
+        {
+            get
+            {
+                return AfterCaptureTasks.HasFlag(AfterCaptureTasks.UploadImageToHost);
+            }
+        }
+
         public bool IsValid
         {
             get
@@ -71,7 +87,7 @@ namespace ShareX
             new QuickTaskInfo("Upload, Copy URL", AfterCaptureTasks.UploadImageToHost, AfterUploadTasks.CopyURLToClipboard),
             new QuickTaskInfo("Save", AfterCaptureTasks.SaveImageToFile),
             new QuickTaskInfo("Copy image", AfterCaptureTasks.CopyImageToClipboard),
-            new QuickTaskInfo("Annotate", AfterCaptureTasks.AnnotateImage)
+            //new QuickTaskInfo("Annotate", AfterCaptureTasks.AnnotateImage)
         };
 
         public QuickTaskInfo()
