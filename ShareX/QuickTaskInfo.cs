@@ -36,6 +36,16 @@ namespace ShareX
         public AfterCaptureTasks AfterCaptureTasks { get; set; }
         public AfterUploadTasks AfterUploadTasks { get; set; }
 
+        public AfterCaptureForm AfterCaptureForm { get; set; }
+
+        public string AfterCaptureFormText
+        {
+            get
+            {
+                return AfterCaptureForm.ToString();
+            }
+        }
+
         public bool IsEmpty
         {
             get
@@ -125,6 +135,12 @@ namespace ShareX
             }
 
             return result;
+        }
+
+        public void DescribeTask()
+        {
+            QRCodeForm qrCodeForm = new QRCodeForm();
+            qrCodeForm.Show();
         }
     }
 }
