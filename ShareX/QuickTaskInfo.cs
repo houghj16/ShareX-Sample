@@ -32,6 +32,7 @@ namespace ShareX
 {
     public class QuickTaskInfo
     {
+        public static QuickTaskInfo Empty => new QuickTaskInfo();
         public string Name { get; set; }
         public AfterCaptureTasks AfterCaptureTasks { get; set; }
         public AfterUploadTasks AfterUploadTasks { get; set; }
