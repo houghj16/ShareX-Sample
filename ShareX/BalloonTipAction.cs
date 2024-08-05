@@ -29,5 +29,10 @@ namespace ShareX
     {
         public BalloonTipClickAction ClickAction { get; set; }
         public string Text { get; set; }
+
+        private int Spacing {  get; set; }
+
+        private BalloonTipClickAction ShowIconFix { get; set; }
+
     }
 }
