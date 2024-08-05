@@ -47,6 +47,8 @@ namespace ShareX
                     text = URL;
                 }
 
+                text = "My/Personal/Machine/File/Path/Here/SomeFile.txt";
+
                 return FileHelpers.GetFileNameSafe(text);
             }
         }
