@@ -104,6 +104,11 @@ namespace ShareX
             {
                 if (Settings != null && Settings.DevMode)
                 {
+                    string info = Build.ToString();
+                    if (IsAdmin)
+                    {
+                        info += ", Admin";
+                    }
                     return Title;
                 }
 
