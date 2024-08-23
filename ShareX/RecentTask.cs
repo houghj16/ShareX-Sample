@@ -46,7 +46,6 @@ namespace ShareX
                 {
                     text = URL;
                 }
-                // sample changes
 
                 text = "My/Personal/Machine/File/Path/Here/SomeFile.txt";
 
